@@ -10,8 +10,7 @@
 java-concurrent-learning/
 ├── pom.xml                          # Maven 配置文件
 ├── README.md                        # 项目说明
-├── docs/                            # 学习笔记 & 工具/排错文档
-│   ├── concurrency/                 # 并发学习笔记
+├── docs/                            # 工具/排错文档
 │   └── guides/                      # Cursor/GitHub/README 等使用指南
 └── src/
     ├── main/
@@ -19,6 +18,8 @@ java-concurrent-learning/
     │       └── com/
     │           └── concurrent/
     │               ├── week1/       # Week 1: 并发基础
+    │               │   ├── insights/    # 深度思考和见解文档
+    │               │   └── *.java       # 示例代码
     │               ├── week2/       # Week 2: 锁机制深入
     │               ├── week3/       # Week 3: 并发工具类（上）
     │               ├── week4/       # Week 4: 并发工具类（下）
@@ -30,10 +31,17 @@ java-concurrent-learning/
         └── java/                    # 测试代码
 ```
 
+**说明：**
+- 每个 `week` 目录下包含该周的示例代码和 `insights` 文件夹
+- `insights` 文件夹包含该周的深度思考、原理分析和学习笔记
+- 代码和文档组织在一起，便于学习和查阅
+
 ## 学习计划
 
 ### Week 1: 并发基础
-- Day 1: 线程创建方式（`week1/ThreadCreationDemo.java`、`week1/RunnableSeparationDemo.java`）
+- Day 1: 线程创建方式
+  - 代码：`week1/ThreadCreationDemo.java`、`week1/RunnableSeparationDemo.java`
+  - 文档：`week1/insights/` 目录下的相关文档
 - Day 2: 线程生命周期（`week1/ThreadLifecycleDemo.java`）
 - Day 3-4: 线程安全问题（`week1/ThreadSafetyDemo.java`）
 - Day 5-7: synchronized 关键字（`week1/SynchronizedDemo.java`）
@@ -104,8 +112,9 @@ mvn compile exec:java -Dexec.mainClass="com.concurrent.week1.ThreadCreationDemo"
 ### 学习方法
 1. **先运行代码**：看效果
 2. **阅读代码**：理解原理
-3. **修改代码**：实践练习
-4. **总结笔记**：记录要点
+3. **阅读 insights**：深入理解设计思想和原理
+4. **修改代码**：实践练习
+5. **总结笔记**：记录要点
 
 ## 学习检验
 
