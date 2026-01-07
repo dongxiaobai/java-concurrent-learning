@@ -9,7 +9,7 @@ package com.leqee.concurrent.week1;
  * 3. 可重入性
  * 4. 锁的粒度
  */
-public class SynchronizedDemo {
+public class Day05_06_07_SynchronizedDemo {
 
     /**
      * 同步方法示例

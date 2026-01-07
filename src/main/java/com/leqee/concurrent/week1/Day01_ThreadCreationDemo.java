@@ -6,7 +6,9 @@ package com.leqee.concurrent.week1;
  * 学习目标：
  * 1. 理解三种创建线程的方式
  * 2. 观察线程的执行过程
- * 3. 理解线程的生命周期
+ * 3. 理解线程的基本操作（sleep、interrupt、join）
+ * 
+ * 注意：线程生命周期相关内容请参考 ThreadLifecycleDemo.java（Day 2）
  */
 public class ThreadCreationDemo {
 

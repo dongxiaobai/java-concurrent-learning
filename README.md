@@ -31,9 +31,10 @@ java-concurrent-learning/
 ## 学习计划
 
 ### Week 1: 并发基础
-- Day 1-2: 线程创建与生命周期
-- Day 3-4: 线程安全问题
-- Day 5-7: synchronized 关键字
+- Day 1: 线程创建方式（Day01_ThreadCreationDemo.java）
+- Day 2: 线程生命周期（Day02_ThreadLifecycleDemo.java）
+- Day 3-4: 线程安全问题（Day03_04_ThreadSafetyDemo.java）
+- Day 5-7: synchronized 关键字（Day05_06_07_SynchronizedDemo.java）
 
 ### Week 2: 锁机制深入
 - Day 1-3: ReentrantLock

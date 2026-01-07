@@ -9,7 +9,7 @@ package com.leqee.concurrent.week1;
  * 3. 理解共享变量的可见性问题
  * 4. 理解原子性问题
  */
-public class ThreadSafetyDemo {
+public class Day03_04_ThreadSafetyDemo {
 
     /**
      * 线程不安全的计数器
