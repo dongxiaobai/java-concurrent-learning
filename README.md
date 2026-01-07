@@ -10,20 +10,22 @@
 java-concurrent-learning/
 ├── pom.xml                          # Maven 配置文件
 ├── README.md                        # 项目说明
+├── docs/                            # 学习笔记 & 工具/排错文档
+│   ├── concurrency/                 # 并发学习笔记
+│   └── guides/                      # Cursor/GitHub/README 等使用指南
 └── src/
     ├── main/
     │   └── java/
     │       └── com/
-    │           └── leqee/
-    │               └── concurrent/
-    │                   ├── week1/   # Week 1: 并发基础
-    │                   ├── week2/   # Week 2: 锁机制深入
-    │                   ├── week3/   # Week 3: 并发工具类（上）
-    │                   ├── week4/   # Week 4: 并发工具类（下）
-    │                   ├── week5/   # Week 5: 并发集合
-    │                   ├── week6/   # Week 6: 线程池
-    │                   ├── week7/   # Week 7: 原子类
-    │                   └── week8/   # Week 8: CAS 原理与实战
+    │           └── concurrent/
+    │               ├── week1/       # Week 1: 并发基础
+    │               ├── week2/       # Week 2: 锁机制深入
+    │               ├── week3/       # Week 3: 并发工具类（上）
+    │               ├── week4/       # Week 4: 并发工具类（下）
+    │               ├── week5/       # Week 5: 并发集合
+    │               ├── week6/       # Week 6: 线程池
+    │               ├── week7/       # Week 7: 原子类
+    │               └── week8/       # Week 8: CAS 原理与实战
     └── test/
         └── java/                    # 测试代码
 ```
@@ -31,10 +33,10 @@ java-concurrent-learning/
 ## 学习计划
 
 ### Week 1: 并发基础
-- Day 1: 线程创建方式（`day01/ThreadCreationDemo.java`）
-- Day 2: 线程生命周期（`day02/ThreadLifecycleDemo.java`）
-- Day 3-4: 线程安全问题（`day03-04/ThreadSafetyDemo.java`）
-- Day 5-7: synchronized 关键字（`day05-07/SynchronizedDemo.java`）
+- Day 1: 线程创建方式（`week1/ThreadCreationDemo.java`、`week1/RunnableSeparationDemo.java`）
+- Day 2: 线程生命周期（`week1/ThreadLifecycleDemo.java`）
+- Day 3-4: 线程安全问题（`week1/ThreadSafetyDemo.java`）
+- Day 5-7: synchronized 关键字（`week1/SynchronizedDemo.java`）
 
 ### Week 2: 锁机制深入
 - Day 1-3: ReentrantLock
@@ -69,13 +71,13 @@ mvn compile
 #### 方式1：使用 javac + java
 ```bash
 cd src/main/java
-javac com/leqee/concurrent/week1/ThreadCreationDemo.java
-java com.leqee.concurrent.week1.ThreadCreationDemo
+javac com/concurrent/week1/ThreadCreationDemo.java
+java com.concurrent.week1.ThreadCreationDemo
 ```
 
 #### 方式2：使用 Maven
 ```bash
-mvn compile exec:java -Dexec.mainClass="com.leqee.concurrent.week1.ThreadCreationDemo"
+mvn compile exec:java -Dexec.mainClass="com.concurrent.week1.ThreadCreationDemo"
 ```
 
 #### 方式3：使用 IDE
