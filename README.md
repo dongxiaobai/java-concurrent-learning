@@ -16,10 +16,12 @@ java-concurrent-learning/
     ├── main/
     │   └── java/
     │       └── com/
-    │           └── concurrent/
-    │               ├── week1/       # Week 1: 并发基础
-    │               │   ├── insights/    # 深度思考和见解文档
-    │               │   └── *.java       # 示例代码
+            │           └── concurrent/
+            │               ├── week1/       # Week 1: 并发基础
+            │               │   ├── day1/        # Day 1: 线程创建方式
+            │               │   ├── day2/        # Day 2: 线程生命周期
+            │               │   ├── day3-04/     # Day 3-4: 线程安全问题
+            │               │   └── day5-07/     # Day 5-7: synchronized 关键字
     │               ├── week2/       # Week 2: 锁机制深入
     │               ├── week3/       # Week 3: 并发工具类（上）
     │               ├── week4/       # Week 4: 并发工具类（下）
@@ -40,11 +42,11 @@ java-concurrent-learning/
 
 ### Week 1: 并发基础
 - Day 1: 线程创建方式
-  - 代码：`week1/ThreadCreationDemo.java`、`week1/RunnableSeparationDemo.java`
-  - 文档：`week1/insights/` 目录下的相关文档
-- Day 2: 线程生命周期（`week1/ThreadLifecycleDemo.java`）
-- Day 3-4: 线程安全问题（`week1/ThreadSafetyDemo.java`）
-- Day 5-7: synchronized 关键字（`week1/SynchronizedDemo.java`）
+  - 代码：`week1/day1/ThreadCreationDemo.java`、`week1/day1/RunnableSeparationDemo.java`
+  - 文档：`week1/day1/insights/` 目录下的相关文档
+- Day 2: 线程生命周期（`week1/day2/ThreadLifecycleDemo.java`）
+- Day 3-4: 线程安全问题（`week1/day3-04/ThreadSafetyDemo.java`）
+- Day 5-7: synchronized 关键字（`week1/day5-07/SynchronizedDemo.java`）
 
 ### Week 2: 锁机制深入
 - Day 1-3: ReentrantLock
